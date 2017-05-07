@@ -1,0 +1,164 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  text-align: center;
+  background-repeat: repeat;
+  background-attachment: fixed;
+/*  background-color: #333;*/
+  background-image: url("images/bg.jpg");
+  color: #fff;
+  font-family: 'Raleway', sans-serif;
+  -webkit-text-stroke: 0.0px black;
+/*  display: flex; 
+  flex-direction: column; 
+  justify-content: center; */
+}
+
+.row {
+  margin: 10px 0px;
+  padding: 0px;
+  line-height: 100%;
+  border-radius: 10px;
+  text-align: center; 
+  align-items: center;
+  display: flex;
+}
+
+.logo {
+  max-width: 50px;
+  max-height: 50px;
+  border-radius: 50%;
+  border: 2px solid #fff;
+}
+
+.container {
+  margin: 0px auto;
+  padding: 0px;
+  max-width: 70%;
+}
+
+
+.online {
+  background-color: #4F8B60;
+}
+
+.online:hover {
+  background-color: #FFF;
+  border: 3px solid #4F8B60;
+}
+
+.offline {
+  background-color: #FF7B7C;
+}
+
+.offline:hover {
+  background-color: #FFF;
+  border: 3px solid #FF7B7C;
+}
+
+.closed {
+  background-color: #CCCCCC;
+}
+
+.closed:hover {
+  background-color: #FFF;
+  border: 3px solid #CCCCCC;
+}
+
+a {
+  width: 80%;
+  color: #fff;
+  text-decoration: none !important;
+}
+
+
+a:hover {
+text-decoration: none;
+color: #00ADFF;
+}
+
+
+
+.rllogo {
+margin-right: 50px;
+}
+
+.btncss {
+width: 15%;
+padding: 5px;  
+padding-top: 15px;  
+text-align: center;
+}
+
+.top {
+ text-align: center;
+ display: block;
+ margin: 0px auto;
+ padding: 0px;
+ max-width: 60%;
+ margin-bottom: 10px;
+}
+
+.float {
+  float: left;
+}
+
+.clear {
+  clear: both;
+}
+
+.button {
+    border-style: solid;
+    border-width: 0px 0px 3px;
+    box-shadow: 0 -1px 0 rgba(255, 255, 255, 0.1) inset;
+    color: #FFFFFF;    
+    border-radius: 15px;
+    cursor: pointer;
+    display: inline-block;
+    font-style: normal;
+    overflow: hidden;
+    text-align: center;
+    text-decoration: none;
+    text-overflow: ellipsis;
+    transition: all 200ms ease-in-out 0s;
+    white-space: nowrap;  
+    font-weight: 700; 
+    padding: 5px 5px 5px;
+    font-size: 15px;
+}
+
+.btn-on {
+
+  border-color: #3AC162;
+  background-color: #5FCF80;
+
+}
+.btn-on:hover, .btn-on:focus, .btn-on:active {
+    background-color: #4BC970;
+    border-color: #3AC162;    
+}
+
+.btn-off {
+
+    background-color: #ED5A5A !important;
+    border-color: #EA4343 !important;
+
+}
+.btn-off:hover, .btn-off:focus, .btn-off:active {
+    background: none repeat scroll 0 0 #EB4848 !important;
+    border-color: #E83131 !important;    
+}
+
+.btn-closed {
+
+     background-color: #C6CCD2;
+     border-color: #AAB3BB;
+}
+.btn-closed:hover, .btn-closed:focus, .btn-closed:active {
+    background-color: #B8BFC7;
+    border-color: #AAB3BB; 
+}

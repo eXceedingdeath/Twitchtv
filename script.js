@@ -128,6 +128,7 @@ function getInfo() {
 
 $(document).ready(function() {
   getInfo();
+  setTimeout(getNewInfo, 10000);
 
 $("#btnOn").click(function() {
 tglOn();

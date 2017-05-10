@@ -54,6 +54,11 @@ break;
   }
 }
 
+function getNewInfoSecure() {
+
+setTimeout(getNewInfo, 15000);
+}
+
 function getNewInfo() {
   $("#displayOn").empty();
   $("#displayOff").empty();
@@ -123,11 +128,12 @@ function getInfo() {
     });
    }});
   });
-  setTimeout(getNewInfo, 60000);
+  setTimeout(getNewInfo, 30000);
 }
 
 $(document).ready(function() {
   getInfo();
+  getNewInfoSecure();
   setTimeout(getNewInfo, 10000);
 
 $("#btnOn").click(function() {

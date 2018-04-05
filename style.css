@@ -1,121 +1,140 @@
 html,
 body {
-  height: 100%;
-  margin: 0;
+    height: 100%;
+    margin: 0;
 }
 
 body {
-  text-align: center;
-  background-repeat: repeat;
-  background-attachment: fixed;
-/*  background-color: #333;*/
-  background-image: url("images/bg.jpg");
-  color: #fff;
-  font-family: 'Raleway', sans-serif;
-  -webkit-text-stroke: 0.0px black;
-/*  display: flex; 
+    text-align: center;
+    background: url(image/bg.jpg) no-repeat center fixed;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-image: url("images/bg2.jpg");
+    color: #fff;
+    font-family: 'Raleway', sans-serif;
+    -webkit-text-stroke: 0.0px black;
+    /*  display: flex; 
   flex-direction: column; 
   justify-content: center; */
 }
 
+#overlay {
+    position: fixed; /* Sit on top of the page content */
+    display: visible; /* Hidden by default */
+    width: 100%; /* Full width (cover the whole page) */
+    height: 100%; /* Full height (cover the whole page) */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(255,255,255,0.15); /* Black background with opacity */
+    z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+    cursor: pointer; /* Add a pointer on hover */
+}
+
+
 .row {
-  margin: 10px 0px;
-  padding: 0px;
-  line-height: 100%;
-  border-radius: 10px;
-  text-align: center; 
-  align-items: center;
-  display: flex;
+    margin: 10px 0px;
+    padding: 0px;
+    line-height: 100%;
+    border-radius: 10px;
+    text-align: center;
+    align-items: center;
+    display: flex;
 }
 
 .logo {
-  max-width: 50px;
-  max-height: 50px;
-  border-radius: 50%;
-  border: 2px solid #fff;
+    max-width: 50px;
+    max-height: 50px;
+    border-radius: 50%;
+    border: 2px solid #fff;
 }
 
 .container {
-  margin: 0px auto;
-  padding: 0px;
-  max-width: 70%;
+    margin: 0px auto;
+    padding: 0px;
+    max-width: 70%;
 }
 
 
 .online {
-  background-color: #4F8B60;
+    background-color: #4F8B60;
 }
 
 .online:hover {
-  background-color: #FFF;
-  border: 3px solid #4F8B60;
+    background-color: #FFF;
+    border: 3px solid #4F8B60;
 }
 
 .offline {
-  background-color: #FF7B7C;
+    background-color: #FF7B7C;
 }
 
 .offline:hover {
-  background-color: #FFF;
-  border: 3px solid #FF7B7C;
+    background-color: #FFF;
+    border: 3px solid #FF7B7C;
 }
 
 .closed {
-  background-color: #CCCCCC;
+    background-color: #CCCCCC;
 }
 
 .closed:hover {
-  background-color: #FFF;
-  border: 3px solid #CCCCCC;
+    background-color: #FFF;
+    border: 3px solid #CCCCCC;
 }
 
 a {
-  width: 80%;
-  color: #fff;
-  text-decoration: none !important;
+    width: 80%;
+    color: #fff;
+    text-decoration: none !important;
 }
 
 
 a:hover {
-text-decoration: none;
-color: #00ADFF;
+    text-decoration: none;
+    color: #00ADFF;
 }
 
 
 
 .rllogo {
-margin-right: 50px;
+    margin-right: 50px;
+    background-color: #FFF;
+    border: 2px solid white;
+    border-radius: 25px;
+    padding: 5px 10px 5px 10px;
 }
 
 .btncss {
-width: 15%;
-padding: 5px;  
-padding-top: 15px;  
-text-align: center;
+    width: 15%;
+    padding: 5px;
+    padding-top: 15px;
+    text-align: center;
 }
 
 .top {
- text-align: center;
- display: block;
- margin: 0px auto;
- padding: 0px;
- max-width: 60%;
- margin-bottom: 10px;
+    text-align: center;
+    display: block;
+    margin: 0px auto;
+    padding: 0px;
+    max-width: 60%;
+    margin-bottom: 10px;
 }
 
 .float {
-  float: left;
+    float: left;
 }
 
 .clear {
-  clear: both;
+    clear: both;
 }
 
 .button {
     border-style: solid;
     border-width: 0px 0px 3px;
     box-shadow: 0 -1px 0 rgba(255, 255, 255, 0.1) inset;
-    color: #FFFFFF;    
+    color: #FFFFFF;
     border-radius: 15px;
     cursor: pointer;
     display: inline-block;
@@ -125,40 +144,47 @@ text-align: center;
     text-decoration: none;
     text-overflow: ellipsis;
     transition: all 200ms ease-in-out 0s;
-    white-space: nowrap;  
-    font-weight: 700; 
+    white-space: nowrap;
+    font-weight: 700;
     padding: 5px 5px 5px;
     font-size: 15px;
 }
 
 .btn-on {
 
-  border-color: #3AC162;
-  background-color: #5FCF80;
-
+    border-color: #3AC162;
+    background-color: #5FCF80;
 }
-.btn-on:hover, .btn-on:focus, .btn-on:active {
+
+.btn-on:hover,
+.btn-on:focus,
+.btn-on:active {
     background-color: #4BC970;
-    border-color: #3AC162;    
+    border-color: #3AC162;
 }
 
 .btn-off {
 
     background-color: #ED5A5A !important;
     border-color: #EA4343 !important;
-
 }
-.btn-off:hover, .btn-off:focus, .btn-off:active {
+
+.btn-off:hover,
+.btn-off:focus,
+.btn-off:active {
     background: none repeat scroll 0 0 #EB4848 !important;
-    border-color: #E83131 !important;    
+    border-color: #E83131 !important;
 }
 
 .btn-closed {
 
-     background-color: #C6CCD2;
-     border-color: #AAB3BB;
+    background-color: #C6CCD2;
+    border-color: #AAB3BB;
 }
-.btn-closed:hover, .btn-closed:focus, .btn-closed:active {
+
+.btn-closed:hover,
+.btn-closed:focus,
+.btn-closed:active {
     background-color: #B8BFC7;
-    border-color: #AAB3BB; 
+    border-color: #AAB3BB;
 }

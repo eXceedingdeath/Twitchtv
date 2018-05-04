@@ -128,7 +128,7 @@ function getInfo() {
     });
    }});
   });
-  setTimeout(getNewInfo, 30000);
+  setTimeout(getNewInfo, 60000);
 }
 
 $(document).ready(function() {

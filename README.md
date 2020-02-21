@@ -1,1 +1,1 @@
-http://sunstarsmoon.com/Twitchtv/
+http://theghostswithin.fr/Twitchtv/
